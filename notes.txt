@@ -1,0 +1,65 @@
+1. PENGENALAN VALIDATION
+library Joi
+
+2. MEMBUAT PROJECT
+npm init
+type module
+npm install --save-dev jest @types/jest
+npm install --save-dev babel-jest @babel/preset-env
+
+npm install joi
+
+3. Validation
+validation.test.js
+import Joi
+
+bisa check email, domain, port dan lainnya
+
+// Schema
+buat schema
+
+// Validasi Tipe Data
+boolean, string, int, dan lainnya
+
+4. DATE VALIDATION
+min 1-1-1950
+max now
+apakah timestamp, ISO dan lainnya
+
+5. VALIDATION RESULT
+hasil validate()  => object dengan value dan error (kalau error)
+result.value & result.error
+
+6. VALIDATION ERROR
+result.error
+object validation error => name, isJoi, details, message, path, type, dan lainnya
+
+7. VALIDATION OPTION
+validate(value, [options])
+misalnya check dari kiri sampai kanan validasinya
+
+8. OBJECT VALIDATION
+object.test.js
+
+// Nested Object
+schema juga nested
+
+tidak perlu satu persatu field
+
+9. ARRAY VALIDATION
+array.test.js
+
+// Validasi Array of Object
+juga bisa
+
+10. CUSTOM VALIDATION MESSAGE
+messages()
+misal => email harus diisi!
+
+11. CUSTOM VALIDATION
+custom()
+
+value  === 1
+helpers.error()
+
+misal => password & confirm password
